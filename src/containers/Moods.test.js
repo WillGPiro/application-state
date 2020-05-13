@@ -1,6 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Moods, { isTired, isHyper, isEducated, isHungry, getFace } from './Moods';
+import { Provider } from 'react-redux'
+import store from '../store.js'
 
 describe('Moods', () => {
   describe('mood selectors', () => {
